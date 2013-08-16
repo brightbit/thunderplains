@@ -4285,7 +4285,8 @@ header {
     #speakers .speakers-topics li.speakers-topics-css {
       background-image: url("../images/speakers-topics-css.png"); }
     #speakers .speakers-topics li.speakers-topics-api {
-      background-image: url("../images/speakers-topics-api.png"); }
+      background-image: url("../images/speakers-topics-api.png");
+      background-position: center 35px; }
     #speakers .speakers-topics li.speakers-topics-mobile {
       background-image: url("../images/speakers-topics-mobile.png"); }
 
