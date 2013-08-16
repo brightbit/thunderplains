@@ -4383,8 +4383,12 @@ header {
   font-size: 20px;
   line-height: 20px; }
 
-#map {
-  height: 300px;
+#location .section-title {
+  margin-bottom: 0; }
+#location #map {
+  height: 400px;
+  width: 100%;
+  margin-top: 20px;
   background: #f4f0e9;
   border-top: 2px solid #4c5a53;
   border-bottom: 2px solid #4c5a53; }
