@@ -11,13 +11,14 @@
 
   <link href="stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
 
+  <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
   <script src="javascripts/application.js" type="text/javascript"></script>
 </head>
 <body>
 
   <header>
-    <h1>Thunder Plains</h1>
     <hgroup>
+      <h1>Thunder Plains</h1>
       <h2>Developer Conference</h2>
       <h3>
         November 7<sup>th</sup>
@@ -26,123 +27,129 @@
       </h3>
     </hgroup>
 
-    <nav>
-      <ul>
-        <li>
-          <a href="#conference">Conference</a>
-        </li>
-        <li>
-          <a href="#speakers">Speakers</a>
-        </li>
-        <li>
-          <a href="#passes">Passes</a>
-        </li>
-        <li>
-          <a href="#location">Location</a>
-        </li>
-      </ul>
+    <nav class="container">
+      <div class="row">
+        <ul>
+          <li class="col-md-3">
+            <a href="#conference">Conference</a>
+          </li>
+          <li class="col-md-3">
+            <a href="#speakers">Speakers</a>
+          </li>
+          <li class="col-md-3">
+            <a href="#passes">Passes</a>
+          </li>
+          <li class="col-md-3">
+            <a href="#location">Location</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
   </header>
 
+  <div id="content" class="container">
 
-
-  <section id="conference">
-    <h2 class="section-title">Developer Conference</h2>
-    <p><strong>Thunder Plains</strong> is awesome and you should totally go to it and see lots of awesome people. We’ll have stuff you like, we’ll talk about it and maybe we’ll have coffee too. Do you like development? Because we’ve got some geeky people who seriously will not stop talking about that stuff. They’re all like “have you checked out the new HTML7 and with DoubleLatteScript support?” But if you’re into that, but maybe you’d have fun.</p>
-  </section>
-
-
-
-  <section id="speakers">
-    <h2 class="section-title">Want to be a speaker?</h2>
-    <p>We want to hear your proposals for presentations on web technologies such as</p>
-    <ul class="speakers-topics">
-      <li class="speakers-topics-js">Javascript</li>
-      <li class="speakers-topics-html">HTML</li>
-      <li class="speakers-topics-css">CSS</li>
-      <li class="speakers-topics-api">APIs</li>
-      <li class="speakers-topics-mobile">Mobile</li>
-    </ul>
-    <p>
-      Send us a description of your talk to <a href="mailto:submissions@thunderplainsconf.com">submissions@thunderplainsconf.com</a>.<br>
-      Just be sure to do it by September 30<sup>th</sup>
-    </p>
-  </section>
+    <section id="conference">
+      <h2 class="section-title">Developer Conference</h2>
+      <p><strong>Thunder Plains</strong> is awesome and you should totally go to it and see lots of awesome people. We’ll have stuff you like, we’ll talk about it and maybe we’ll have coffee too. Do you like development? Because we’ve got some geeky people who seriously will not stop talking about that stuff. They’re all like “have you checked out the new HTML7 and with DoubleLatteScript support?” But if you’re into that, maybe you’d have fun.</p>
+    </section>
 
 
 
-  <section id="passes">
-    <h2 class="section-title">Passes</h2>
-    <ul class="passes-list">
-      <li class="passes-earlybird">
-        <div class="pass-title">
-          Early Bird
-          <small>Ends August 31<sup>st</sup></small>
-        </div>
-        <div class="pass-price soldout">Sold Out</div>
-      </li>
-      <li class="passes-regular">
-        <div class="pass-title">
-          Regular Pass
-          <small>Ends October 31<sup>st</sup></small>
-        </div>
-        <div class="pass-price">$129<sup>00</sup></div>
-      </li>
-      <li class="passes-onsite">
-        <div class="pass-title">
-          Onsite Pass
-          <small>At the door</small>
-        </div>
-        <div class="pass-price">$149<sup>00</sup></div>
-      </li>
-      <li class="passes-earlybird">
-        <div class="pass-title">
-          Students
-          <small>w/ Student ID</small>
-        </div>
-        <div class="pass-price">$99<sup>00</sup></div>
-      </li>
-    </ul>
-  </section>
+    <section id="speakers">
+      <h2 class="section-title">Want to be a speaker?</h2>
+      <p>We want to hear your proposals for presentations on web technologies such as</p>
+      <ul class="speakers-topics row">
+        <li class="speakers-topics-js col-md-2 col-md-offset-1">Javascript</li>
+        <li class="speakers-topics-html col-md-2">HTML</li>
+        <li class="speakers-topics-css col-md-2">CSS</li>
+        <li class="speakers-topics-api col-md-2">APIs</li>
+        <li class="speakers-topics-mobile col-md-2">Mobile</li>
+      </ul>
+      <p>
+        Send us a description of your talk to <a href="mailto:submissions@thunderplainsconf.com">submissions@thunderplainsconf.com</a>.<br>
+        Just be sure to do it by September 30<sup>th</sup>
+      </p>
+    </section>
 
 
 
-  <section id="location">
-    <h2 class="section-title">Where it’s at</h2>
-    <p>
-      Located in downtown Oklahoma City<br>
-      within walking distance of great hotels and restaurants
-    </p>
-    <div class="map">Map</div>
-  </section>
+    <section id="passes">
+      <h2 class="section-title">Passes</h2>
+      <ul class="passes-list row">
+        <li class="pass-earlybirde soldout">
+          <div class="pass-title col-md-8">
+            <h3>Early Bird</h3>
+            Ends August 31<sup>st</sup>
+          </div>
+          <div class="pass-price col-md-4">Sold Out</div>
+        </li>
+        <li class="pass-regular">
+          <a href="#">
+            <div class="pass-title col-md-8">
+              <h3>Regular Pass</h3>
+              Ends October 31<sup>st</sup>
+            </div>
+            <div class="pass-price col-md-4">$129<sup>00</sup></div>
+          </a>
+        </li>
+        <li class="pass-onsite">
+          <a href="#">
+            <div class="pass-title col-md-8">
+              <h3>Onsite Pass</h3>
+              At the door
+            </div>
+            <div class="pass-price col-md-4">$149<sup>00</sup></div>
+          </a>
+        </li>
+        <li class="pass-students">
+          <a href="#">
+            <div class="pass-title col-md-8">
+              <h3>Students</h3>
+              w/ Student ID
+            </div>
+            <div class="pass-price col-md-4">$99<sup>00</sup></div>
+          </a>
+        </li>
+      </ul>
+    </section>
 
 
 
-  <section id="sponsors">
-    <h2 class="section-title">With help from these fine folks</h2>
-    <ul class="sponsors-list">
-      <li>
-        <a href="http://innotech.com" class="logo-innotech">Innotech</a>
-      <li>
-      <li>
-        <a href="http://brightbit.com" class="logo-brightbit">Brightbit</a>
-      <li>
-    </ul>
-    <p>
-      <a href="mailto: hello@thunderplainsconf.com">Become a sponsor</a>
-    </p>
-  </section>
+    <section id="location">
+      <h2 class="section-title">Where it’s at</h2>
+      <p>
+        Located in downtown Oklahoma City<br>
+        within walking distance of great hotels and restaurants
+      </p>
+      <div class="map">Map</div>
+    </section>
 
 
+
+    <section id="sponsors">
+      <h2 class="section-title">With help from these fine folks</h2>
+      <ul class="sponsors-list">
+        <li>
+          <a href="http://innotech.com" class="logo-innotech">Innotech</a>
+        <li>
+        <li>
+          <a href="http://brightbit.com" class="logo-brightbit">Brightbit</a>
+        <li>
+      </ul>
+      <p>
+        <a href="mailto: hello@thunderplainsconf.com">Become a sponsor</a>
+      </p>
+    </section>
+
+  </div>
 
   <footer>
     <div class="siteby">
       Site by <span class="logo-brightbit">Brightbit</span>
     </div>
   </footer>
-
-
 
 </body>
 </html>
