@@ -1,0 +1,254 @@
+@import "bootstrap"
+@import "settings"
+@import "mixins"
+
+body
+  background: $background
+  font-family: $font-body
+  font-weight: 100
+  color: $blue-dark
+  font-size: 25px
+  line-height: 40px
+  text-align: center
+  cursor: default
+
+html, body
+  height: 100%
+  min-height: 100%
+
+#content
+  //background: url("../images/test-grid.png")
+
+
+// Typography
+h1, h2, h3, h4
+  margin: 0 0 20px
+
+h2
+  font-family: $font-headers
+
+h3
+  font-family: $font-subheaders
+
+a, a:hover
+  cursor: pointer
+  color: $blue-light
+  text-decoration: none
+
+sup
+  font-size: .6em
+
+img
+  max-width: 100%
+
+
+// Elements
+section
+  padding: 100px 0
+
+.section-title
+  font-size: 50px
+  line-height: 50px
+  margin: 0 0 20px
+  font-family: $font-headers
+  color: $purple-light
+
+.list-simple
+  margin: 0
+  padding: 0
+  list-style: none
+
+.list-inline
+  @extend .list-simple
+  li
+    display: inline-block
+
+
+
+// Sections
+header
+  background: $blue-dark url("../images/header-gradient.png") bottom center no-repeat
+  background-attachment: fixed
+  height: 100%
+  color: white
+  position: relative
+  z-index: 1
+
+  .buildings
+    background: url("../images/header-bg.png") bottom center no-repeat
+    background-attachment: fixed
+    height: 100%
+    overflow: auto
+
+  hgroup
+    margin-top: 10%
+
+  h1
+    @include text-replace("../images/logo-header.png", 227px, 375px)
+
+  nav
+    font-size: 25px
+    line-height: 30px
+    height: 40px
+    font-family: $font-headers
+    position: absolute
+    bottom: 0
+    left: 0
+    right: 0
+    ul
+      @extend .list-simple
+    a, a:hover
+      color: white
+
+#speakers
+  .speakers-topics
+    @extend .list-simple
+    font-weight: 800
+    font-size: 25px
+    line-height: 30px
+    color: $purple-dark
+    text-transform: uppercase
+    margin: 25px 0 40px
+
+    li
+      padding-bottom: 165px
+      background: transparent center 30px no-repeat
+      &.speakers-topics-js
+        background-image: url("../images/speakers-topics-js.png")
+        background-position: center 35px
+      &.speakers-topics-html
+        background-image: url("../images/speakers-topics-html.png")
+      &.speakers-topics-css
+        background-image: url("../images/speakers-topics-css.png")
+      &.speakers-topics-api
+        background-image: url("../images/speakers-topics-api.png")
+      &.speakers-topics-mobile
+        background-image: url("../images/speakers-topics-mobile.png")
+
+
+#passes
+  .passes-list
+    @extend .list-simple
+    text-align: left
+    margin-top: -10px
+    li
+      background: $creme
+      margin: 0 0 20px
+      position: relative
+      z-index: 1
+      overflow: hidden
+      &:before, &:after
+        content: ""
+        display: block
+        height: 60px
+        width: 60px
+        border-radius: 50%
+        background: $background
+        position: absolute
+        z-index: 1
+        top: 50%
+        margin-top: -30px
+      &:before
+        left: 0
+        margin-left: -40px
+      &:after
+        right: 0
+        margin-right: -40px
+
+      .pass-title, .pass-price
+        padding: 60px 0 0 60px
+        height: 160px
+
+      .pass-title
+        color: $green-light
+        h3
+          display: inline
+          margin: 0
+          text-transform: uppercase
+          font-size: 50px
+          margin-right: .25em
+
+      .pass-price
+        background: $purple-light
+        color: white
+        text-transform: uppercase
+        font-weight: 800
+        font-size: 60px
+        sup
+          font-weight: 300
+          font-size: .5em
+          top: -0.7em
+          text-decoration: underline
+      &.pass-earlybird .pass-price
+        background: $orange
+      &.pass-onsite .pass-price
+        background: $purple-dark
+      &.pass-students .pass-price
+        background: $blue-dark
+
+      &.soldout
+        .pass-title
+          color: mix($green-light, $creme, 20%)
+        .pass-price
+          font-size: 50px
+          text-decoration: line-through
+          color: mix($purple-light, white)
+
+        &.pass-earlybird .pass-price
+          color: mix($orange, white)
+        &.pass-onsite .pass-price
+          color: mix($purple-dark, white)
+        &.pass-students .pass-price
+          color: mix($blue-dark, white)
+
+#sponsors
+  .sponsors-list
+    @extend .list-simple
+    overflow: hidden
+    margin: 30px 0 10px
+
+    .logo-innotech
+      @include text-replace("../images/logo-innotech.png", 90px, 152px)
+    .logo-brightbit
+      @include text-replace("../images/logo-brightbit.png", 58px, 210px)
+      margin-top: 10px
+
+  a
+    color: #aaa
+    font-size: 20px
+    line-height: 20px
+
+#map
+  height: 300px
+  background: $creme
+  border-top: 2px solid $green-dark
+  border-bottom: 2px solid $green-dark
+
+
+footer
+  overflow: auto
+
+  .siteby
+    display: block
+    font-size: 20px
+    color: #ccc
+    margin: 100px 0 20px
+    &:before, &:after
+      content: ""
+      display: inline-block
+      background-repeat: no-repeat
+      position: relative
+    &:before
+      height: 24px
+      width: 44px
+      background-image: url("../images/arrow-left.png")
+      top: 6px
+    &:after
+      height: 16px
+      width: 51px
+      background-image: url("../images/arrow-right.png")
+      top: 2px
+  
+  .logo-brightbit
+    @include text-replace("../images/logo-brightbit-footer.png", 40px, 146px)
+    display: inline-block
