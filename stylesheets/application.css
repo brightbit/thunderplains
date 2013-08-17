@@ -4273,15 +4273,19 @@ header {
     overflow: hidden;
     text-indent: 1000%;
     white-space: nowrap;
-    height: 227px;
     width: 375px;
+    height: 227px;
     background: url("../images/logo-header.png") no-repeat;
     margin-top: 10%;
     margin-bottom: 20px; }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+      header h1 {
+        background-image: url("../images/logo-header@2x.png");
+        background-size: 375px 227px; } }
     @media only screen and (max-width: 768px) {
       header h1 {
-        height: 113px;
         width: 188px;
+        height: 113px;
         background-size: 100% 100%;
         margin-top: 30%; } }
   header h2 {
@@ -4307,14 +4311,18 @@ header {
     overflow: hidden;
     text-indent: 1000%;
     white-space: nowrap;
-    height: 18px;
     width: 12px;
+    height: 18px;
     background: url("../images/kapow.png") no-repeat;
     display: inline-block;
     margin: 0 10px;
     position: relative;
     z-index: 1;
     top: 3px; }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+      header .kapow {
+        background-image: url("../images/kapow@2x.png");
+        background-size: 12px 18px; } }
   header nav {
     font-size: 25px;
     line-height: 30px;
@@ -4370,8 +4378,8 @@ header {
     #passes .passes-list li:before, #passes .passes-list li:after {
       content: "";
       display: block;
-      height: 60px;
       width: 60px;
+      height: 60px;
       border-radius: 50%;
       background: #fafafa;
       position: absolute;
@@ -4456,19 +4464,23 @@ header {
     overflow: hidden;
     text-indent: 1000%;
     white-space: nowrap;
-    height: 90px;
     width: 152px;
+    height: 90px;
     background: url("../images/logo-innotech.png") no-repeat; }
   #sponsors .sponsors-list li .logo-brightbit {
+    margin-top: 10px;
     margin: 0 auto;
     display: block;
     overflow: hidden;
     text-indent: 1000%;
     white-space: nowrap;
-    height: 58px;
     width: 210px;
-    background: url("../images/logo-brightbit.png") no-repeat;
-    margin-top: 10px; }
+    height: 58px;
+    background: url("../images/logo-brightbit.png") no-repeat; }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+      #sponsors .sponsors-list li .logo-brightbit {
+        background-image: url("../images/logo-brightbit@2x.png");
+        background-size: 210px 58px; } }
 #sponsors a {
   color: #aaaaaa;
   font-size: 20px;
@@ -4477,8 +4489,8 @@ header {
 #location .section-title {
   margin-bottom: 0; }
 #location #map {
-  height: 400px;
   width: 100%;
+  height: 400px;
   margin-top: 20px;
   background: #f4f0e9;
   border-top: 2px solid #4c5a53;
@@ -4497,23 +4509,35 @@ footer {
       background-repeat: no-repeat;
       position: relative; }
     footer .siteby:before {
-      height: 24px;
       width: 44px;
-      background-image: url("../images/arrow-left.png");
-      top: 6px; }
+      height: 24px;
+      top: 6px;
+      background-image: url("../images/arrow-left.png"); }
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+        footer .siteby:before {
+          background-image: url("../images/arrow-left@2x.png");
+          background-size: 44px 24px; } }
     footer .siteby:after {
-      height: 16px;
       width: 51px;
-      background-image: url("../images/arrow-right.png");
-      top: 2px; }
+      height: 16px;
+      top: 2px;
+      background-image: url("../images/arrow-right.png"); }
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+        footer .siteby:after {
+          background-image: url("../images/arrow-right@2x.png");
+          background-size: 51px 16px; } }
   footer .logo-brightbit {
     margin: 0 auto;
     display: block;
     overflow: hidden;
     text-indent: 1000%;
     white-space: nowrap;
-    height: 40px;
     width: 146px;
+    height: 40px;
     background: url("../images/logo-brightbit-footer.png") no-repeat;
     display: inline-block;
     vertical-align: middle; }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+      footer .logo-brightbit {
+        background-image: url("../images/logo-brightbit-footer@2x.png");
+        background-size: 146px 40px; } }

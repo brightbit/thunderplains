@@ -98,12 +98,15 @@ header
       background-size: 1100px 500px
 
   h1
-    @include text-replace("../images/logo-header.png", 227px, 375px)
+    @include text-replace("../images/logo-header.png", 375px, 227px)
     margin-top: 10%
     margin-bottom: 20px
+    @media all and (-webkit-min-device-pixel-ratio: 1.5)
+      background-image: url("../images/logo-header@2x.png")
+      background-size: 375px 227px
     @media only screen and (max-width: $break-small)
-      height: 113px
       width: 188px
+      height: 113px
       background-size: 100% 100%
       margin-top: 30%
 
@@ -125,12 +128,15 @@ header
       line-height: 20px
 
   .kapow
-    @include text-replace("../images/kapow.png", 18px, 12px)
+    @include text-replace("../images/kapow.png", 12px, 18px)
     display: inline-block
     margin: 0 10px
     position: relative
     z-index: 1
     top: 3px
+    @media all and (-webkit-min-device-pixel-ratio: 1.5)
+      background-image: url("../images/kapow@2x.png")
+      background-size: 12px 18px
 
   nav
     font-size: 25px
@@ -190,8 +196,8 @@ header
       &:before, &:after
         content: ""
         display: block
-        height: 60px
         width: 60px
+        height: 60px
         border-radius: 50%
         background: $background
         position: absolute
@@ -277,10 +283,14 @@ header
         margin-bottom: 40px
 
       .logo-innotech
-        @include text-replace("../images/logo-innotech.png", 90px, 152px)
+        @include text-replace("../images/logo-innotech.png", 152px, 90px)
+        // No retina logo for Innotech because it's not out there. Oh well.
       .logo-brightbit
-        @include text-replace("../images/logo-brightbit.png", 58px, 210px)
         margin-top: 10px
+        @include text-replace("../images/logo-brightbit.png", 210px, 58px)
+        @media all and (-webkit-min-device-pixel-ratio: 1.5)
+          background-image: url("../images/logo-brightbit@2x.png")
+          background-size: 210px 58px
 
   a
     color: #aaa
@@ -293,8 +303,8 @@ header
     margin-bottom: 0
 
   #map
-    height: 400px
     width: 100%
+    height: 400px
     margin-top: 20px
     background: $creme
     border-top: 2px solid $green-dark
@@ -315,17 +325,26 @@ footer
       background-repeat: no-repeat
       position: relative
     &:before
-      height: 24px
       width: 44px
-      background-image: url("../images/arrow-left.png")
+      height: 24px
       top: 6px
+      background-image: url("../images/arrow-left.png")
+      @media all and (-webkit-min-device-pixel-ratio: 1.5)
+        background-image: url("../images/arrow-left@2x.png")
+        background-size: 44px 24px
     &:after
-      height: 16px
       width: 51px
-      background-image: url("../images/arrow-right.png")
+      height: 16px
       top: 2px
+      background-image: url("../images/arrow-right.png")
+      @media all and (-webkit-min-device-pixel-ratio: 1.5)
+        background-image: url("../images/arrow-right@2x.png")
+        background-size: 51px 16px
   
   .logo-brightbit
-    @include text-replace("../images/logo-brightbit-footer.png", 40px, 146px)
+    @include text-replace("../images/logo-brightbit-footer.png", 146px, 40px)
     display: inline-block
     vertical-align: middle
+    @media all and (-webkit-min-device-pixel-ratio: 1.5)
+      background-image: url("../images/logo-brightbit-footer@2x.png")
+      background-size: 146px 40px
