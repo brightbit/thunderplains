@@ -11,6 +11,9 @@ body
   line-height: 40px
   text-align: center
   cursor: default
+  @media only screen and (max-width: $break-small)
+    font-size: 16px
+    line-height: 20px
 
 html, body
   height: 100%
@@ -23,6 +26,8 @@ html, body
 // Typography
 h1, h2, h3, h4
   margin: 0 0 20px
+  @media only screen and (max-width: $break-small)
+    margin-bottom: 10px
 
 h2
   font-family: $font-headers
@@ -46,12 +51,20 @@ img
 section
   padding: 100px 0
 
+.container
+  @media only screen and (max-width: $break-small)
+    padding: 50px 20px
+
 .section-title
   font-size: 50px
-  line-height: 50px
+  line-height: 60px
   margin: 0 0 20px
   font-family: $font-headers
   color: $purple-light
+  @media only screen and (max-width: $break-small)
+    font-size: 25px
+    line-height: 30px
+    margin-bottom: 10px
 
 .list-simple
   margin: 0
@@ -67,24 +80,57 @@ section
 
 // Sections
 header
-  background: $blue-dark url("../images/header-gradient.png") bottom center no-repeat
+  background: $blue-dark url("../images/header-gradient.png") center bottom repeat-x
   background-attachment: fixed
   height: 100%
   color: white
   position: relative
   z-index: 1
+  @media only screen and (max-width: $break-small)
+    background-size: 1px 500px
 
   .buildings
     background: url("../images/header-bg.png") bottom center no-repeat
     background-attachment: fixed
     height: 100%
     overflow: auto
-
-  hgroup
-    margin-top: 10%
+    @media only screen and (max-width: $break-small)
+      background-size: 1100px 500px
 
   h1
     @include text-replace("../images/logo-header.png", 227px, 375px)
+    margin-top: 10%
+    margin-bottom: 20px
+    @media only screen and (max-width: $break-small)
+      height: 113px
+      width: 188px
+      background-size: 100% 100%
+      margin-top: 30%
+
+  h2
+    font-family: $font-subheaders
+    font-size: 50px
+    line-height: 60px
+    margin-bottom: 0
+    @media only screen and (max-width: $break-small)
+      font-size: 20px
+      line-height: 30px
+
+  h3
+    font-family: $font-headers
+    font-size: 30px
+    line-height: 40px
+    @media only screen and (max-width: $break-small)
+      font-size: 15px
+      line-height: 20px
+
+  .kapow
+    @include text-replace("../images/kapow.png", 18px, 12px)
+    display: inline-block
+    margin: 0 10px
+    position: relative
+    z-index: 1
+    top: 3px
 
   nav
     font-size: 25px
@@ -95,6 +141,8 @@ header
     bottom: 0
     left: 0
     right: 0
+    @media only screen and (max-width: $break-small)
+      display: none
     ul
       @extend .list-simple
     a, a:hover
@@ -104,34 +152,35 @@ header
   .speakers-topics
     @extend .list-simple
     font-weight: 800
-    font-size: 25px
-    line-height: 30px
     color: $purple-dark
     text-transform: uppercase
     margin: 25px 0 40px
+    font-size: 25px
+    line-height: 30px
+    @media only screen and (max-width: $break-small)
+      font-size: 10px
+      line-height: 20px
+      margin: 15px 0 20px
 
     li
-      padding-bottom: 165px
-      background: transparent center 30px no-repeat
-      &.speakers-topics-js
-        background-image: url("../images/speakers-topics-js.png")
-        background-position: center 35px
-      &.speakers-topics-html
-        background-image: url("../images/speakers-topics-html.png")
-      &.speakers-topics-css
-        background-image: url("../images/speakers-topics-css.png")
-      &.speakers-topics-api
-        background-image: url("../images/speakers-topics-api.png")
-        background-position: center 35px
-      &.speakers-topics-mobile
-        background-image: url("../images/speakers-topics-mobile.png")
+      margin-bottom: 40px
+      img
+        display: block
+        margin: 0 auto
+      @media only screen and (max-width: $break-medium)
+        font-size: 15px
+      @media only screen and (max-width: $break-small)
+        margin-bottom: 20px
+        &.speakers-topics-api
+          margin-left: 16.6%
 
 
 #passes
   .passes-list
     @extend .list-simple
-    text-align: left
     margin-top: -10px
+    @media only screen and (min-width: $break-small)
+      text-align: left
     li
       background: $creme
       margin: 0 0 20px
@@ -157,8 +206,11 @@ header
         margin-right: -40px
 
       .pass-title, .pass-price
-        padding: 60px 0 0 60px
+        padding: 60px
         height: 160px
+        @media only screen and (max-width: $break-small)
+          height: 80px
+          padding: 25px
 
       .pass-title
         color: $green-light
@@ -167,7 +219,13 @@ header
           margin: 0
           text-transform: uppercase
           font-size: 50px
+          line-height: 50px
           margin-right: .25em
+          @media only screen and (max-width: $break-small)
+            font-size: 25px
+            line-height: 20px
+            display: block
+            margin-bottom: 0
 
       .pass-price
         background: $purple-light
@@ -175,6 +233,9 @@ header
         text-transform: uppercase
         font-weight: 800
         font-size: 60px
+        @media only screen and (max-width: $break-small)
+          font-size: 40px
+          line-height: 30px
         sup
           font-weight: 300
           font-size: .5em
@@ -194,6 +255,9 @@ header
           font-size: 50px
           text-decoration: line-through
           color: mix($purple-light, white)
+          @media only screen and (max-width: $break-small)
+            font-size: 30px
+            line-height: 40px
 
         &.pass-earlybird .pass-price
           color: mix($orange, white)
@@ -208,11 +272,15 @@ header
     overflow: hidden
     margin: 30px 0 10px
 
-    .logo-innotech
-      @include text-replace("../images/logo-innotech.png", 90px, 152px)
-    .logo-brightbit
-      @include text-replace("../images/logo-brightbit.png", 58px, 210px)
-      margin-top: 10px
+    li
+      @media only screen and (max-width: $break-small)
+        margin-bottom: 40px
+
+      .logo-innotech
+        @include text-replace("../images/logo-innotech.png", 90px, 152px)
+      .logo-brightbit
+        @include text-replace("../images/logo-brightbit.png", 58px, 210px)
+        margin-top: 10px
 
   a
     color: #aaa
@@ -260,3 +328,4 @@ footer
   .logo-brightbit
     @include text-replace("../images/logo-brightbit-footer.png", 40px, 146px)
     display: inline-block
+    vertical-align: middle

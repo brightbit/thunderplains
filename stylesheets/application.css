@@ -4180,6 +4180,7 @@ th.hidden-lg, td.hidden-lg {
   font-weight: normal;
   font-style: normal; }
 
+/* Breakpoints */
 body {
   background: #fafafa;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -4189,6 +4190,10 @@ body {
   line-height: 40px;
   text-align: center;
   cursor: default; }
+  @media only screen and (max-width: 768px) {
+    body {
+      font-size: 16px;
+      line-height: 20px; } }
 
 html, body {
   height: 100%;
@@ -4196,6 +4201,9 @@ html, body {
 
 h1, h2, h3, h4 {
   margin: 0 0 20px; }
+  @media only screen and (max-width: 768px) {
+    h1, h2, h3, h4 {
+      margin-bottom: 10px; } }
 
 h2 {
   font-family: Haymaker, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -4217,12 +4225,21 @@ img {
 section {
   padding: 100px 0; }
 
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 50px 20px; } }
+
 .section-title {
   font-size: 50px;
-  line-height: 50px;
+  line-height: 60px;
   margin: 0 0 20px;
   font-family: Haymaker, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #b27d97; }
+  @media only screen and (max-width: 768px) {
+    .section-title {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 10px; } }
 
 .list-simple, .list-inline, header nav ul, #speakers .speakers-topics, #passes .passes-list, #sponsors .sponsors-list {
   margin: 0;
@@ -4233,19 +4250,23 @@ section {
   display: inline-block; }
 
 header {
-  background: #2d3740 url("../images/header-gradient.png") bottom center no-repeat;
+  background: #2d3740 url("../images/header-gradient.png") center bottom repeat-x;
   background-attachment: fixed;
   height: 100%;
   color: white;
   position: relative;
   z-index: 1; }
+  @media only screen and (max-width: 768px) {
+    header {
+      background-size: 1px 500px; } }
   header .buildings {
     background: url("../images/header-bg.png") bottom center no-repeat;
     background-attachment: fixed;
     height: 100%;
     overflow: auto; }
-  header hgroup {
-    margin-top: 10%; }
+    @media only screen and (max-width: 768px) {
+      header .buildings {
+        background-size: 1100px 500px; } }
   header h1 {
     margin: 0 auto;
     display: block;
@@ -4254,7 +4275,46 @@ header {
     white-space: nowrap;
     height: 227px;
     width: 375px;
-    background: url("../images/logo-header.png") no-repeat; }
+    background: url("../images/logo-header.png") no-repeat;
+    margin-top: 10%;
+    margin-bottom: 20px; }
+    @media only screen and (max-width: 768px) {
+      header h1 {
+        height: 113px;
+        width: 188px;
+        background-size: 100% 100%;
+        margin-top: 30%; } }
+  header h2 {
+    font-family: Governor, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 0; }
+    @media only screen and (max-width: 768px) {
+      header h2 {
+        font-size: 20px;
+        line-height: 30px; } }
+  header h3 {
+    font-family: Haymaker, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 40px; }
+    @media only screen and (max-width: 768px) {
+      header h3 {
+        font-size: 15px;
+        line-height: 20px; } }
+  header .kapow {
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    text-indent: 1000%;
+    white-space: nowrap;
+    height: 18px;
+    width: 12px;
+    background: url("../images/kapow.png") no-repeat;
+    display: inline-block;
+    margin: 0 10px;
+    position: relative;
+    z-index: 1;
+    top: 3px; }
   header nav {
     font-size: 25px;
     line-height: 30px;
@@ -4264,35 +4324,43 @@ header {
     bottom: 0;
     left: 0;
     right: 0; }
+    @media only screen and (max-width: 768px) {
+      header nav {
+        display: none; } }
     header nav a, header nav a:hover {
       color: white; }
 
 #speakers .speakers-topics {
   font-weight: 800;
-  font-size: 25px;
-  line-height: 30px;
   color: #524866;
   text-transform: uppercase;
-  margin: 25px 0 40px; }
+  margin: 25px 0 40px;
+  font-size: 25px;
+  line-height: 30px; }
+  @media only screen and (max-width: 768px) {
+    #speakers .speakers-topics {
+      font-size: 10px;
+      line-height: 20px;
+      margin: 15px 0 20px; } }
   #speakers .speakers-topics li {
-    padding-bottom: 165px;
-    background: transparent center 30px no-repeat; }
-    #speakers .speakers-topics li.speakers-topics-js {
-      background-image: url("../images/speakers-topics-js.png");
-      background-position: center 35px; }
-    #speakers .speakers-topics li.speakers-topics-html {
-      background-image: url("../images/speakers-topics-html.png"); }
-    #speakers .speakers-topics li.speakers-topics-css {
-      background-image: url("../images/speakers-topics-css.png"); }
-    #speakers .speakers-topics li.speakers-topics-api {
-      background-image: url("../images/speakers-topics-api.png");
-      background-position: center 35px; }
-    #speakers .speakers-topics li.speakers-topics-mobile {
-      background-image: url("../images/speakers-topics-mobile.png"); }
+    margin-bottom: 40px; }
+    #speakers .speakers-topics li img {
+      display: block;
+      margin: 0 auto; }
+    @media only screen and (max-width: 992px) {
+      #speakers .speakers-topics li {
+        font-size: 15px; } }
+    @media only screen and (max-width: 768px) {
+      #speakers .speakers-topics li {
+        margin-bottom: 20px; }
+        #speakers .speakers-topics li.speakers-topics-api {
+          margin-left: 16.6%; } }
 
 #passes .passes-list {
-  text-align: left;
   margin-top: -10px; }
+  @media only screen and (min-width: 768px) {
+    #passes .passes-list {
+      text-align: left; } }
   #passes .passes-list li {
     background: #f4f0e9;
     margin: 0 0 20px;
@@ -4317,8 +4385,12 @@ header {
       right: 0;
       margin-right: -40px; }
     #passes .passes-list li .pass-title, #passes .passes-list li .pass-price {
-      padding: 60px 0 0 60px;
+      padding: 60px;
       height: 160px; }
+      @media only screen and (max-width: 768px) {
+        #passes .passes-list li .pass-title, #passes .passes-list li .pass-price {
+          height: 80px;
+          padding: 25px; } }
     #passes .passes-list li .pass-title {
       color: #7c8079; }
       #passes .passes-list li .pass-title h3 {
@@ -4326,13 +4398,24 @@ header {
         margin: 0;
         text-transform: uppercase;
         font-size: 50px;
+        line-height: 50px;
         margin-right: 0.25em; }
+        @media only screen and (max-width: 768px) {
+          #passes .passes-list li .pass-title h3 {
+            font-size: 25px;
+            line-height: 20px;
+            display: block;
+            margin-bottom: 0; } }
     #passes .passes-list li .pass-price {
       background: #b27d97;
       color: white;
       text-transform: uppercase;
       font-weight: 800;
       font-size: 60px; }
+      @media only screen and (max-width: 768px) {
+        #passes .passes-list li .pass-price {
+          font-size: 40px;
+          line-height: 30px; } }
       #passes .passes-list li .pass-price sup {
         font-weight: 300;
         font-size: 0.5em;
@@ -4350,6 +4433,10 @@ header {
       font-size: 50px;
       text-decoration: line-through;
       color: #d8becb; }
+      @media only screen and (max-width: 768px) {
+        #passes .passes-list li.soldout .pass-price {
+          font-size: 30px;
+          line-height: 40px; } }
     #passes .passes-list li.soldout.pass-earlybird .pass-price {
       color: #f2e0cf; }
     #passes .passes-list li.soldout.pass-onsite .pass-price {
@@ -4360,7 +4447,10 @@ header {
 #sponsors .sponsors-list {
   overflow: hidden;
   margin: 30px 0 10px; }
-  #sponsors .sponsors-list .logo-innotech {
+  @media only screen and (max-width: 768px) {
+    #sponsors .sponsors-list li {
+      margin-bottom: 40px; } }
+  #sponsors .sponsors-list li .logo-innotech {
     margin: 0 auto;
     display: block;
     overflow: hidden;
@@ -4369,7 +4459,7 @@ header {
     height: 90px;
     width: 152px;
     background: url("../images/logo-innotech.png") no-repeat; }
-  #sponsors .sponsors-list .logo-brightbit {
+  #sponsors .sponsors-list li .logo-brightbit {
     margin: 0 auto;
     display: block;
     overflow: hidden;
@@ -4425,4 +4515,5 @@ footer {
     height: 40px;
     width: 146px;
     background: url("../images/logo-brightbit-footer.png") no-repeat;
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: middle; }
