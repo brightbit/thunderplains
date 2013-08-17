@@ -4258,7 +4258,8 @@ header {
   z-index: 1; }
   @media only screen and (max-width: 768px) {
     header {
-      background-size: 1px 500px; } }
+      background-size: 1px 500px;
+      background-attachment: scroll; } }
   header .buildings {
     background: url("../images/header-bg.png") bottom center no-repeat;
     background-attachment: fixed;
@@ -4266,7 +4267,8 @@ header {
     overflow: auto; }
     @media only screen and (max-width: 768px) {
       header .buildings {
-        background-size: 1100px 500px; } }
+        background-size: 1100px 500px;
+        background-attachment: scroll; } }
   header h1 {
     margin: 0 auto;
     display: block;
@@ -4370,7 +4372,7 @@ header {
     #passes .passes-list {
       text-align: left; } }
   #passes .passes-list li {
-    background: #f4f0e9;
+    background: #f2ece4;
     margin: 0 0 20px;
     position: relative;
     z-index: 1;
@@ -4436,7 +4438,7 @@ header {
     #passes .passes-list li.pass-students .pass-price {
       background: #2d3740; }
     #passes .passes-list li.soldout .pass-title {
-      color: #dcd9d2; }
+      color: #dad6ce; }
     #passes .passes-list li.soldout .pass-price {
       font-size: 50px;
       text-decoration: line-through;
@@ -4444,7 +4446,7 @@ header {
       @media only screen and (max-width: 768px) {
         #passes .passes-list li.soldout .pass-price {
           font-size: 30px;
-          line-height: 40px; } }
+          line-height: 30px; } }
     #passes .passes-list li.soldout.pass-earlybird .pass-price {
       color: #f2e0cf; }
     #passes .passes-list li.soldout.pass-onsite .pass-price {
@@ -4492,7 +4494,7 @@ header {
   width: 100%;
   height: 400px;
   margin-top: 20px;
-  background: #f4f0e9;
+  background: #f2ece4;
   border-top: 2px solid #4c5a53;
   border-bottom: 2px solid #4c5a53; }
 
