@@ -1,4 +1,5 @@
 $(function() {
+  initializeMap();
 
   // Smooth Scroll
   $('a[href*=#]:not([href=#])').click(function() {
@@ -18,7 +19,7 @@ $(function() {
 });
 
 // Map
-function initialize() {
+function initializeMap() {
   var mapOptions = {
     zoom: 16,
     center: new google.maps.LatLng(35.467, -97.514),
@@ -62,12 +63,3 @@ function initialize() {
   }
   setMarkers(map, markerPoints);
 }
-
-function loadScript() {
-  var script = document.createElement("script");
-  script.type = "text/javascript";
-  script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyCvbTld6AHZj_PbND6ZysGns9kXb5BBNi0&sensor=false&callback=initialize";
-  document.body.appendChild(script);
-}
-
-window.onload = loadScript;
