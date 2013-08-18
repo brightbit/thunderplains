@@ -4317,10 +4317,7 @@ header {
     height: 18px;
     background: url("../images/kapow.png") no-repeat;
     display: inline-block;
-    margin: 0 10px;
-    position: relative;
-    z-index: 1;
-    top: 3px; }
+    margin: 0 10px; }
     @media all and (-webkit-min-device-pixel-ratio: 1.5) {
       header .kapow {
         background-image: url("../images/kapow@2x.png");
