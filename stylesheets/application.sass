@@ -143,18 +143,23 @@ header
   nav
     font-size: 25px
     line-height: 30px
-    height: 40px
     font-family: $font-headers
     position: absolute
     bottom: 0
     left: 0
     right: 0
-    @media only screen and (max-width: $break-small)
-      display: none
+    .container
+      padding: 20px
     ul
       @extend .list-simple
     a, a:hover
       color: white
+
+  .scroll-hint
+    @include text-replace("../images/chevron-down.png", 25px, 10px)
+    @media all and (-webkit-min-device-pixel-ratio: 1.5)
+      background-image: url("../images/chevron-down@2x.png")
+      background-size: 25px 10px
 
 #speakers
   .speakers-topics

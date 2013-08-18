@@ -4328,17 +4328,28 @@ header {
   header nav {
     font-size: 25px;
     line-height: 30px;
-    height: 40px;
     font-family: Haymaker, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0; }
-    @media only screen and (max-width: 768px) {
-      header nav {
-        display: none; } }
+    header nav .container {
+      padding: 20px; }
     header nav a, header nav a:hover {
       color: white; }
+  header .scroll-hint {
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    text-indent: 1000%;
+    white-space: nowrap;
+    width: 25px;
+    height: 10px;
+    background: url("../images/chevron-down.png") no-repeat; }
+    @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+      header .scroll-hint {
+        background-image: url("../images/chevron-down@2x.png");
+        background-size: 25px 10px; } }
 
 #speakers .speakers-topics {
   font-weight: 800;
