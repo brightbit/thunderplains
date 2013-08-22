@@ -4269,6 +4269,21 @@ header {
       header .buildings {
         background-size: 1100px 500px;
         background-attachment: scroll; } }
+  header .intro {
+    position: absolute;
+    width: 710px;
+    top: 50%;
+    margin-top: -185px;
+    left: 50%;
+    margin-left: -355px; }
+    @media only screen and (max-width: 768px) {
+      header .intro {
+        width: 355px;
+        margin-left: -180px; } }
+    @media only screen and (max-width: 768px) and (orientation: landscape) {
+      header .intro {
+        top: 0;
+        margin-top: 10px; } }
   header h1 {
     margin: 0 auto;
     display: block;
@@ -4278,7 +4293,6 @@ header {
     width: 375px;
     height: 227px;
     background: url("../images/logo-header.png") no-repeat;
-    margin-top: 10%;
     margin-bottom: 20px; }
     @media all and (-webkit-min-device-pixel-ratio: 1.5) {
       header h1 {
@@ -4288,8 +4302,10 @@ header {
       header h1 {
         width: 188px;
         height: 113px;
-        background-size: 100% 100%;
-        margin-top: 30%; } }
+        background-size: 100% 100%; } }
+    @media only screen and (max-width: 768px) and (orientation: landscape) {
+      header h1 {
+        margin-bottom: 0; } }
   header h2 {
     font-family: Governor, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 50px;
@@ -4306,7 +4322,7 @@ header {
     @media only screen and (max-width: 768px) {
       header h3 {
         font-size: 15px;
-        line-height: 20px; } }
+        line-height: 15px; } }
   header .kapow {
     margin: 0 auto;
     display: block;
@@ -4331,7 +4347,7 @@ header {
     left: 0;
     right: 0; }
     header nav .container {
-      padding: 20px; }
+      padding: 10px; }
     header nav a, header nav a:hover {
       color: white; }
   header .scroll-hint {
