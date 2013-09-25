@@ -4365,8 +4365,10 @@ header {
         background-size: 25px 10px; } }
 
 #speakers .speakers-list .speaker {
-  text-align: left;
   margin-bottom: 20px; }
+  @media only screen and (min-width: 992px) {
+    #speakers .speakers-list .speaker {
+      text-align: left; } }
   #speakers .speakers-list .speaker img {
     margin-bottom: 10px; }
   #speakers .speakers-list .speaker h3 {

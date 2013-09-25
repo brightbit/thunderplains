@@ -177,8 +177,9 @@ header
   .speakers-list
     @extend .list-simple
     .speaker
-      text-align: left
       margin-bottom: 20px
+      @media only screen and (min-width: $break-medium)
+        text-align: left
       img
         margin-bottom: 10px
       h3
