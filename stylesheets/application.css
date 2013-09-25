@@ -4241,7 +4241,7 @@ section {
       line-height: 30px;
       margin-bottom: 10px; } }
 
-.list-simple, .list-inline, header nav ul, #speakers .speakers-topics, #passes .passes-list, #sponsors .sponsors-list {
+.list-simple, .list-inline, header nav ul, #speakers .speakers-list, #speakers .speakers-topics, #passes .passes-list, #sponsors .sponsors-list {
   margin: 0;
   padding: 0;
   list-style: none; }
@@ -4364,6 +4364,19 @@ header {
         background-image: url("../images/chevron-down@2x.png");
         background-size: 25px 10px; } }
 
+#speakers .speakers-list .speaker {
+  text-align: left;
+  margin-bottom: 20px; }
+  #speakers .speakers-list .speaker img {
+    margin-bottom: 10px; }
+  #speakers .speakers-list .speaker h3 {
+    font-size: 20px;
+    color: #524866;
+    margin-bottom: 0; }
+  #speakers .speakers-list .speaker h4 {
+    font-size: 15px;
+    color: #7c8079;
+    font-weight: 300; }
 #speakers .speakers-topics {
   font-weight: 800;
   color: #524866;
