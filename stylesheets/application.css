@@ -4369,6 +4369,8 @@ header {
   @media only screen and (min-width: 992px) {
     #speakers .speakers-list .speaker {
       text-align: left; } }
+  #speakers .speakers-list .speaker.speaker-tba {
+    text-align: center; }
   #speakers .speakers-list .speaker img {
     margin-bottom: 10px; }
   #speakers .speakers-list .speaker h3 {
