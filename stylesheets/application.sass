@@ -49,6 +49,7 @@ img
 
 // Elements
 section
+  clear: both
   padding: 100px 0
 
 .container
@@ -205,7 +206,6 @@ header
       font-size: 10px
       line-height: 20px
       margin: 15px 0 20px
-
     li
       margin-bottom: 40px
       img
@@ -218,6 +218,85 @@ header
         &.speakers-topics-api
           margin-left: 16.6%
 
+#schedule
+  .schedule-legend
+    margin: 0 0 10px
+    @media only screen and (min-width: $break-medium)
+      margin-top: -10px
+    span
+      white-space: nowrap
+      padding: 0 10px
+      font-size: .8em
+      &:before
+        content: ""
+        display: inline-block
+        background: #ddd
+        height: 1em
+        width: 1em
+        vertical-align: middle
+        margin: -.2em .5em 0 0
+      &.legend-largeroom:before
+        background: $purple-light
+      &.legend-smallroom:before
+        background: $orange
+  .schedule-list
+    @extend .list-simple
+    text-align: left
+    .schedule-time
+      font-size: 12px
+      line-height: 1em
+      padding: 5px 10px
+      text-align: center
+      text-transform: uppercase
+      background: $creme
+      time
+        display: block
+    .schedule-slot
+      @extend .clearfix
+    .schedule-event
+      @extend .clearfix
+      clear: both
+      padding: 10px
+      background: mix($creme, $background, 25%)
+      font-size: 15px
+      line-height: 1em
+      text-align: center
+      p
+        text-transform: uppercase
+        font-weight: 700
+        margin: 0
+        color: $green-light
+      .schedule-talk
+        border: none
+        padding: 0 10px
+        .schedule-title
+          font-size: 25px
+          margin-top: 10px
+        .schedule-name
+          font-size: 20px
+    .schedule-talk
+      border-left: 5px solid $creme
+      border-right: 1px solid $creme
+      padding: 15px 20px 15px  10px
+      &.schedule-largeroom
+        border-left-color: $purple-light
+      &.schedule-smallroom
+        border-left-color: $orange
+    .schedule-title
+      font-size: 20px
+      color: $purple-dark
+      margin-bottom: 0
+    .schedule-name
+      font-size: 15px
+      color: $green-light
+      font-weight: 300
+      margin-bottom: 0
+    @media only screen and (min-width: $break-medium)
+      .schedule-slot
+        .schedule-talk
+          float: left
+          width: 50%
+          height: 90px
 
 #passes
   .passes-list
