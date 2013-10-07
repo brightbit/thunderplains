@@ -154,7 +154,7 @@ header
       background-size: 12px 18px
 
   nav
-    font-size: 25px
+    font-size: 20px
     line-height: 30px
     font-family: $font-headers
     position: absolute
@@ -165,6 +165,9 @@ header
       padding: 10px
     ul
       @extend .list-simple
+      margin-bottom: 10px
+      @media only screen and (max-width: $break-medium)
+        display: none
     a, a:hover
       color: white
 
@@ -241,6 +244,7 @@ header
         background: $orange
   .schedule-list
     @extend .list-simple
+    border: 1px solid $creme
     text-align: left
     .schedule-time
       font-size: 12px
@@ -276,7 +280,6 @@ header
           font-size: 20px
     .schedule-talk
       border-left: 5px solid $creme
-      border-right: 1px solid $creme
       padding: 15px 20px 15px  10px
       &.schedule-largeroom
         border-left-color: $purple-light

@@ -4340,7 +4340,7 @@ header {
         background-image: url("../images/kapow@2x.png");
         background-size: 12px 18px; } }
   header nav {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 30px;
     font-family: Haymaker, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     position: absolute;
@@ -4349,6 +4349,11 @@ header {
     right: 0; }
     header nav .container {
       padding: 10px; }
+    header nav ul {
+      margin-bottom: 10px; }
+      @media only screen and (max-width: 992px) {
+        header nav ul {
+          display: none; } }
     header nav a, header nav a:hover {
       color: white; }
   header .scroll-hint {
@@ -4430,6 +4435,7 @@ header {
     #schedule .schedule-legend span.legend-smallroom:before {
       background: #e5c1a0; }
 #schedule .schedule-list {
+  border: 1px solid #f2ece4;
   text-align: left; }
   #schedule .schedule-list .schedule-time {
     font-size: 12px;
@@ -4462,7 +4468,6 @@ header {
         font-size: 20px; }
   #schedule .schedule-list .schedule-talk {
     border-left: 5px solid #f2ece4;
-    border-right: 1px solid #f2ece4;
     padding: 15px 20px 15px 10px; }
     #schedule .schedule-list .schedule-talk.schedule-largeroom {
       border-left-color: #b27d97; }
