@@ -1,4 +1,4 @@
-@mixin text-replace($image, $width, $height)
+=text-replace($image, $width, $height)
   margin: 0 auto
   display: block
   overflow: hidden
@@ -8,7 +8,18 @@
   height: $height
   background: url($image) no-repeat
 
-@mixin transform($args)
+=transform($args)
   -webkit-transform: $args
   -moz-transform: $args
   transform: $args
+
+=box-shadow($args)
+  -webkit-box-shadow: $args
+  -moz-box-shadow: $args
+  box-shadow: $args
+
+=animation($args)
+  -webkit-animation: $args
+  -moz-animation: $args
+  -o-animation: $args
+  animation: $args

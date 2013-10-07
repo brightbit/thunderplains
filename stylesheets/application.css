@@ -3907,10 +3907,10 @@ a.list-group-item.active > .badge {
     border-radius: 6px; }
     .jumbotron h1 {
       font-size: 63px; } }
-.clearfix:before, #schedule .schedule-list .schedule-slot:before, #schedule .schedule-list .schedule-event:before {
+.clearfix:before, #schedule .schedule-list .schedule-slot:before, #schedule .schedule-list .schedule-event:before, #schedule .schedule-list .schedule-keynote:before {
   display: table;
   content: " "; }
-.clearfix:after, #schedule .schedule-list .schedule-slot:after, #schedule .schedule-list .schedule-event:after {
+.clearfix:after, #schedule .schedule-list .schedule-slot:after, #schedule .schedule-list .schedule-event:after, #schedule .schedule-list .schedule-keynote:after {
   display: table;
   content: " ";
   clear: both; }
@@ -4148,6 +4148,87 @@ th.hidden-lg, td.hidden-lg {
 
   .hidden-print, tr.hidden-print, th.hidden-print, td.hidden-print {
     display: none !important; } }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 1; } }
+
+@-webkit-keyframes fadeBackdrop {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 0.8; } }
+
+@-moz-keyframes fadeBackdrop {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 0.8; } }
+
+@keyframes fadeBackdrop {
+  from {
+    opacity: 0; }
+
+  to {
+    opacity: 0.8; } }
+
+@-webkit-keyframes bloop {
+  0% {
+    -webkit-transform: scale(0.1); }
+
+  50% {
+    -webkit-transform: scale(1); }
+
+  70% {
+    -webkit-transform: scale(0.9); }
+
+  100% {
+    -webkit-transform: scale(1); } }
+
+@-moz-keyframes bloop {
+  0% {
+    -webkit-transform: scale(0.1); }
+
+  50% {
+    -webkit-transform: scale(1); }
+
+  70% {
+    -webkit-transform: scale(0.9); }
+
+  100% {
+    -webkit-transform: scale(1); } }
+
+@keyframes bloop {
+  0% {
+    -webkit-transform: scale(0.1); }
+
+  50% {
+    -webkit-transform: scale(1); }
+
+  70% {
+    -webkit-transform: scale(0.9); }
+
+  100% {
+    -webkit-transform: scale(1); } }
+
 /* Colors */
 /* Fonts */
 @font-face {
@@ -4436,6 +4517,7 @@ header {
       background: #e5c1a0; }
 #schedule .schedule-list {
   border: 1px solid #f2ece4;
+  background: white;
   text-align: left; }
   #schedule .schedule-list .schedule-time {
     font-size: 12px;
@@ -4446,25 +4528,27 @@ header {
     background: #f2ece4; }
     #schedule .schedule-list .schedule-time time {
       display: block; }
-  #schedule .schedule-list .schedule-event {
+  #schedule .schedule-list .schedule-event, #schedule .schedule-list .schedule-keynote {
     clear: both;
     padding: 10px;
-    background: #f8f6f4;
-    font-size: 15px;
-    line-height: 1em;
+    background: #fcfcfc;
     text-align: center; }
-    #schedule .schedule-list .schedule-event p {
+    #schedule .schedule-list .schedule-event p, #schedule .schedule-list .schedule-keynote p {
+      font-size: 15px;
+      line-height: 1em;
       text-transform: uppercase;
       font-weight: 700;
-      margin: 0;
-      color: #7c8079; }
-    #schedule .schedule-list .schedule-event .schedule-talk {
+      color: #7c8079;
+      margin: 0; }
+  #schedule .schedule-list .schedule-keynote {
+    border-left: 5px solid #b27d97; }
+    #schedule .schedule-list .schedule-keynote .schedule-talk {
       border: none;
       padding: 0 10px; }
-      #schedule .schedule-list .schedule-event .schedule-talk .schedule-title {
+      #schedule .schedule-list .schedule-keynote .schedule-talk .schedule-title h3 {
         font-size: 25px;
         margin-top: 10px; }
-      #schedule .schedule-list .schedule-event .schedule-talk .schedule-name {
+      #schedule .schedule-list .schedule-keynote .schedule-talk .schedule-title h4 {
         font-size: 20px; }
   #schedule .schedule-list .schedule-talk {
     border-left: 5px solid #f2ece4;
@@ -4473,20 +4557,47 @@ header {
       border-left-color: #b27d97; }
     #schedule .schedule-list .schedule-talk.schedule-smallroom {
       border-left-color: #e5c1a0; }
-  #schedule .schedule-list .schedule-title {
-    font-size: 20px;
-    color: #524866;
-    margin-bottom: 0; }
-  #schedule .schedule-list .schedule-name {
-    font-size: 15px;
-    color: #7c8079;
-    font-weight: 300;
-    margin-bottom: 0; }
+    #schedule .schedule-list .schedule-talk img, #schedule .schedule-list .schedule-talk p {
+      display: none; }
   @media only screen and (min-width: 992px) {
     #schedule .schedule-list .schedule-slot .schedule-talk {
       float: left;
       width: 50%;
       height: 90px; } }
+
+.schedule-talk .schedule-title h3 {
+  font-size: 20px;
+  color: #524866;
+  margin-bottom: 0; }
+.schedule-talk .schedule-title h4 {
+  font-size: 15px;
+  color: #7c8079;
+  font-weight: 300;
+  margin-bottom: 0; }
+.schedule-talk p {
+  clear: both;
+  margin-top: 10px;
+  border-top: 3px double #eeeeee;
+  padding-top: 10px;
+  font-size: 18px;
+  line-height: 1.35em; }
+
+.modal img {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 90px; }
+.modal .schedule-talk {
+  position: relative;
+  z-index: 1; }
+  .modal .schedule-talk .schedule-title {
+    padding-left: 100px;
+    min-height: 80px; }
+    .modal .schedule-talk .schedule-title h3 {
+      font-size: 25px; }
+    .modal .schedule-talk .schedule-title h4 {
+      font-size: 18px; }
 
 #passes .passes-list {
   margin-top: -10px; }
@@ -4667,3 +4778,25 @@ footer {
       footer .logo-brightbit {
         background-image: url("../images/logo-brightbit-footer@2x.png");
         background-size: 146px 40px; } }
+
+.modal {
+  text-align: left;
+  -webkit-animation: bloop linear 0.5s 1;
+  -moz-animation: bloop linear 0.5s 1;
+  -o-animation: bloop linear 0.5s 1;
+  animation: bloop linear 0.5s 1; }
+  .modal .modal-header {
+    border: none;
+    height: 35px;
+    padding: 10px; }
+  .modal .modal-body {
+    padding-top: 0; }
+
+.modal-backdrop {
+  -webkit-animation: fadeBackdrop linear 0.25s 1;
+  -moz-animation: fadeBackdrop linear 0.25s 1;
+  -o-animation: fadeBackdrop linear 0.25s 1;
+  animation: fadeBackdrop linear 0.25s 1;
+  background: #2d3740; }
+  .modal-backdrop.in {
+    opacity: 0.8; }

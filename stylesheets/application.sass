@@ -1,4 +1,5 @@
 @import "bootstrap"
+@import "animation"
 @import "settings"
 @import "mixins"
 
@@ -245,6 +246,7 @@ header
   .schedule-list
     @extend .list-simple
     border: 1px solid $creme
+    background: white
     text-align: left
     .schedule-time
       font-size: 12px
@@ -261,23 +263,27 @@ header
       @extend .clearfix
       clear: both
       padding: 10px
-      background: mix($creme, $background, 25%)
-      font-size: 15px
-      line-height: 1em
+      background: mix(white, $background)
       text-align: center
       p
+        font-size: 15px
+        line-height: 1em
         text-transform: uppercase
         font-weight: 700
-        margin: 0
         color: $green-light
+        margin: 0
+    .schedule-keynote
+      @extend .schedule-event
+      border-left: 5px solid $purple-light
       .schedule-talk
         border: none
         padding: 0 10px
         .schedule-title
-          font-size: 25px
-          margin-top: 10px
-        .schedule-name
-          font-size: 20px
+          h3
+            font-size: 25px
+            margin-top: 10px
+          h4
+            font-size: 20px
     .schedule-talk
       border-left: 5px solid $creme
       padding: 15px 20px 15px  10px
@@ -285,21 +291,51 @@ header
         border-left-color: $purple-light
       &.schedule-smallroom
         border-left-color: $orange
-    .schedule-title
-      font-size: 20px
-      color: $purple-dark
-      margin-bottom: 0
-    .schedule-name
-      font-size: 15px
-      color: $green-light
-      font-weight: 300
-      margin-bottom: 0
+      img, p
+        display: none
     @media only screen and (min-width: $break-medium)
       .schedule-slot
         .schedule-talk
           float: left
           width: 50%
           height: 90px
+
+.schedule-talk
+  .schedule-title
+    h3
+      font-size: 20px
+      color: $purple-dark
+      margin-bottom: 0
+    h4
+      font-size: 15px
+      color: $green-light
+      font-weight: 300
+      margin-bottom: 0
+  p
+    clear: both
+    margin-top: 10px
+    border-top: 3px double #eee
+    padding-top: 10px
+    font-size: 18px
+    line-height: 1.35em
+
+.modal
+  img
+    position: absolute
+    z-index: 2
+    top: 0
+    left: 0
+    width: 90px
+  .schedule-talk
+    position: relative
+    z-index: 1
+    .schedule-title
+      padding-left: 100px
+      min-height: 80px
+      h3
+        font-size: 25px
+      h4
+        font-size: 18px
 
 #passes
   .passes-list
@@ -470,3 +506,19 @@ footer
     @media all and (-webkit-min-device-pixel-ratio: 1.5)
       background-image: url("../images/logo-brightbit-footer@2x.png")
       background-size: 146px 40px
+
+.modal
+  text-align: left
+  @include animation(bloop linear .5s 1)
+  .modal-header
+    border: none
+    height: 35px
+    padding: 10px
+  .modal-body
+    padding-top: 0
+
+.modal-backdrop
+  @include animation(fadeBackdrop linear .25s 1)
+  background: $blue-dark
+  &.in
+    opacity: 0.8

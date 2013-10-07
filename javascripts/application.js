@@ -16,6 +16,13 @@ $(function() {
     }
   });
 
+  // Talks Modal
+  $('.schedule-talk:not(".no-modal")').on("click", function() {
+    $talk = $(this).clone();
+    $("#modal-talks").modal();
+    $("#modal-talks .modal-body").html($talk);
+  });
+
 });
 
 // Map
