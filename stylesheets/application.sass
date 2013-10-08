@@ -285,12 +285,15 @@ header
           h4
             font-size: 20px
     .schedule-talk
+      cursor: pointer
       border-left: 5px solid $creme
       padding: 15px 20px 15px  10px
       &.schedule-largeroom
         border-left-color: $purple-light
       &.schedule-smallroom
         border-left-color: $orange
+      &.no-modal
+        cursor: default
       img, p
         display: none
     @media only screen and (min-width: $break-medium)
@@ -507,9 +510,13 @@ footer
       background-image: url("../images/logo-brightbit-footer@2x.png")
       background-size: 146px 40px
 
+
+.modal-open
+  overflow: auto
+  
 .modal
   text-align: left
-  @include animation(bloop linear .5s 1)
+  @include animation(fadeIn linear 100ms 1)
   .modal-header
     border: none
     height: 35px
@@ -518,7 +525,7 @@ footer
     padding-top: 0
 
 .modal-backdrop
-  @include animation(fadeBackdrop linear .25s 1)
+  @include animation(fadeBackdrop linear 100ms 1)
   background: $blue-dark
   &.in
     opacity: 0.8

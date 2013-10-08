@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
 /*!
  * Bootstrap v3.0.0
  *
@@ -4232,34 +4232,37 @@ th.hidden-lg, td.hidden-lg {
 /* Colors */
 /* Fonts */
 @font-face {
-  font-family: "liberator";
-  src: url("../fonts/liberator-webfont.eot");
-  src: url("../fonts/liberator-webfont.eot?#iefix") format("embedded-opentype");
-  src: url("../fonts/liberator-webfont.woff") format("woff");
-  src: url("../fonts/liberator-webfont.ttf") format("truetype");
-  src: url("../fonts/liberator-webfont.svg#liberatorregular") format("svg");
+  font-family: "Liberator";
+  src: url("/fonts/liberator-webfont.eot");
+  src: url("/fonts/liberator-webfont.eot?#iefix") format("embedded-opentype");
+  src: url("/fonts/liberator-webfont.woff") format("woff");
+  src: url("/fonts/liberator-webfont.ttf") format("truetype");
+  src: url("/fonts/liberator-webfont.svg#liberatorregular") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-stretch: normal; }
 
 @font-face {
-  font-family: "haymaker";
-  src: url("../fonts/haymaker-webfont.eot");
-  src: url("../fonts/haymaker-webfont.eot?#iefix") format("embedded-opentype");
-  src: url("../fonts/haymaker-webfont.woff") format("woff");
-  src: url("../fonts/haymaker-webfont.ttf") format("truetype");
-  src: url("../fonts/haymaker-webfont.svg#haymakerregular") format("svg");
+  font-family: "Haymaker";
+  src: url("/fonts/haymaker-webfont.eot");
+  src: url("/fonts/haymaker-webfont.eot?#iefix") format("embedded-opentype");
+  src: url("/fonts/haymaker-webfont.woff") format("woff");
+  src: url("/fonts/haymaker-webfont.ttf") format("truetype");
+  src: url("/fonts/haymaker-webfont.svg#haymakerregular") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-stretch: normal; }
 
 @font-face {
-  font-family: "governor";
-  src: url("../fonts/governor-webfont.eot");
-  src: url("../fonts/governor-webfont.eot?#iefix") format("embedded-opentype");
-  src: url("../fonts/governor-webfont.woff") format("woff");
-  src: url("../fonts/governor-webfont.ttf") format("truetype");
-  src: url("../fonts/governor-webfont.svg#governorregular") format("svg");
+  font-family: "Governor";
+  src: url("/fonts/governor-webfont.eot");
+  src: url("/fonts/governor-webfont.eot?#iefix") format("embedded-opentype");
+  src: url("/fonts/governor-webfont.woff") format("woff");
+  src: url("/fonts/governor-webfont.ttf") format("truetype");
+  src: url("/fonts/governor-webfont.svg#governorregular") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-stretch: normal; }
 
 /* Breakpoints */
 body {
@@ -4551,12 +4554,15 @@ header {
       #schedule .schedule-list .schedule-keynote .schedule-talk .schedule-title h4 {
         font-size: 20px; }
   #schedule .schedule-list .schedule-talk {
+    cursor: pointer;
     border-left: 5px solid #f2ece4;
     padding: 15px 20px 15px 10px; }
     #schedule .schedule-list .schedule-talk.schedule-largeroom {
       border-left-color: #b27d97; }
     #schedule .schedule-list .schedule-talk.schedule-smallroom {
       border-left-color: #e5c1a0; }
+    #schedule .schedule-list .schedule-talk.no-modal {
+      cursor: default; }
     #schedule .schedule-list .schedule-talk img, #schedule .schedule-list .schedule-talk p {
       display: none; }
   @media only screen and (min-width: 992px) {
@@ -4779,12 +4785,15 @@ footer {
         background-image: url("../images/logo-brightbit-footer@2x.png");
         background-size: 146px 40px; } }
 
+.modal-open {
+  overflow: auto; }
+
 .modal {
   text-align: left;
-  -webkit-animation: bloop linear 0.5s 1;
-  -moz-animation: bloop linear 0.5s 1;
-  -o-animation: bloop linear 0.5s 1;
-  animation: bloop linear 0.5s 1; }
+  -webkit-animation: fadeIn linear 100ms 1;
+  -moz-animation: fadeIn linear 100ms 1;
+  -o-animation: fadeIn linear 100ms 1;
+  animation: fadeIn linear 100ms 1; }
   .modal .modal-header {
     border: none;
     height: 35px;
@@ -4793,10 +4802,10 @@ footer {
     padding-top: 0; }
 
 .modal-backdrop {
-  -webkit-animation: fadeBackdrop linear 0.25s 1;
-  -moz-animation: fadeBackdrop linear 0.25s 1;
-  -o-animation: fadeBackdrop linear 0.25s 1;
-  animation: fadeBackdrop linear 0.25s 1;
+  -webkit-animation: fadeBackdrop linear 100ms 1;
+  -moz-animation: fadeBackdrop linear 100ms 1;
+  -o-animation: fadeBackdrop linear 100ms 1;
+  animation: fadeBackdrop linear 100ms 1;
   background: #2d3740; }
   .modal-backdrop.in {
     opacity: 0.8; }
