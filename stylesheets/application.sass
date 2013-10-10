@@ -445,12 +445,17 @@ header
 
       .logo-innotech
         @include text-replace("../images/logo-innotech.png", 152px, 90px)
-        // No retina logo for Innotech because it's not out there. Oh well.
       .logo-brightbit
-        margin-top: 10px
         @include text-replace("../images/logo-brightbit.png", 210px, 58px)
+        margin-top: 10px
         @media all and (-webkit-min-device-pixel-ratio: 1.5)
           background-image: url("../images/logo-brightbit@2x.png")
+          background-size: 210px 58px
+      .logo-sst
+        @include text-replace("../images/logo-sst.png", 210px, 58px)
+        margin-top: 18px
+        @media all and (-webkit-min-device-pixel-ratio: 1.5)
+          background-image: url("../images/logo-sst@2x.png")
           background-size: 210px 58px
 
   a

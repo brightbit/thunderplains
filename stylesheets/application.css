@@ -4711,7 +4711,6 @@ header {
       height: 90px;
       background: url("../images/logo-innotech.png") no-repeat; }
     #sponsors .sponsors-list li .logo-brightbit {
-      margin-top: 10px;
       margin: 0 auto;
       display: block;
       overflow: hidden;
@@ -4719,10 +4718,25 @@ header {
       white-space: nowrap;
       width: 210px;
       height: 58px;
-      background: url("../images/logo-brightbit.png") no-repeat; }
+      background: url("../images/logo-brightbit.png") no-repeat;
+      margin-top: 10px; }
       @media all and (-webkit-min-device-pixel-ratio: 1.5) {
         #sponsors .sponsors-list li .logo-brightbit {
           background-image: url("../images/logo-brightbit@2x.png");
+          background-size: 210px 58px; } }
+    #sponsors .sponsors-list li .logo-sst {
+      margin: 0 auto;
+      display: block;
+      overflow: hidden;
+      text-indent: 1000%;
+      white-space: nowrap;
+      width: 210px;
+      height: 58px;
+      background: url("../images/logo-sst.png") no-repeat;
+      margin-top: 18px; }
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+        #sponsors .sponsors-list li .logo-sst {
+          background-image: url("../images/logo-sst@2x.png");
           background-size: 210px 58px; } }
   #sponsors a {
     color: #aaaaaa;
