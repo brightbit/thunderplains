@@ -4697,11 +4697,16 @@ header {
   color: #aaaaaa; }
   #sponsors .sponsors-list {
     overflow: hidden;
-    margin: 30px 0 10px; }
+    margin: 30px 0 10px;
+    font-weight: bold;
+    margin-bottom: 1em; }
+    @media only screen and (min-width: 768px) {
+      #sponsors .sponsors-list .row {
+        margin-bottom: 1em; } }
     @media only screen and (max-width: 768px) {
-      #sponsors .sponsors-list li {
+      #sponsors .sponsors-list .sponsor {
         margin-bottom: 40px; } }
-    #sponsors .sponsors-list li .logo-innotech {
+    #sponsors .sponsors-list .sponsor .logo-innotech {
       margin: 0 auto;
       display: block;
       overflow: hidden;
@@ -4710,7 +4715,7 @@ header {
       width: 152px;
       height: 90px;
       background: url("../images/logo-innotech.png") no-repeat; }
-    #sponsors .sponsors-list li .logo-brightbit {
+    #sponsors .sponsors-list .sponsor .logo-brightbit {
       margin: 0 auto;
       display: block;
       overflow: hidden;
@@ -4719,12 +4724,12 @@ header {
       width: 210px;
       height: 58px;
       background: url("../images/logo-brightbit.png") no-repeat;
-      margin-top: 10px; }
+      margin-top: 11px; }
       @media all and (-webkit-min-device-pixel-ratio: 1.5) {
-        #sponsors .sponsors-list li .logo-brightbit {
+        #sponsors .sponsors-list .sponsor .logo-brightbit {
           background-image: url("../images/logo-brightbit@2x.png");
           background-size: 210px 58px; } }
-    #sponsors .sponsors-list li .logo-sst {
+    #sponsors .sponsors-list .sponsor .logo-sst {
       margin: 0 auto;
       display: block;
       overflow: hidden;
@@ -4733,10 +4738,92 @@ header {
       width: 210px;
       height: 58px;
       background: url("../images/logo-sst.png") no-repeat;
-      margin-top: 18px; }
+      margin-top: 20px; }
       @media all and (-webkit-min-device-pixel-ratio: 1.5) {
-        #sponsors .sponsors-list li .logo-sst {
+        #sponsors .sponsors-list .sponsor .logo-sst {
           background-image: url("../images/logo-sst@2x.png");
+          background-size: 210px 58px; } }
+    #sponsors .sponsors-list .sponsor .logo-robyn {
+      margin: 0 auto;
+      display: block;
+      overflow: hidden;
+      text-indent: 1000%;
+      white-space: nowrap;
+      width: 210px;
+      height: 58px;
+      background: url("../images/logo-robyn.png") no-repeat; }
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+        #sponsors .sponsors-list .sponsor .logo-robyn {
+          background-image: url("../images/logo-robyn@2x.png");
+          background-size: 210px 58px; } }
+    #sponsors .sponsors-list .sponsor .logo-github {
+      margin: 0 auto;
+      display: block;
+      overflow: hidden;
+      text-indent: 1000%;
+      white-space: nowrap;
+      width: 210px;
+      height: 58px;
+      background: url("../images/logo-github.png") no-repeat;
+      margin-top: 6px; }
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+        #sponsors .sponsors-list .sponsor .logo-github {
+          background-image: url("../images/logo-github@2x.png");
+          background-size: 210px 58px; } }
+    #sponsors .sponsors-list .sponsor .logo-twitter {
+      margin: 0 auto;
+      display: block;
+      overflow: hidden;
+      text-indent: 1000%;
+      white-space: nowrap;
+      width: 210px;
+      height: 58px;
+      background: url("../images/logo-twitter.png") no-repeat;
+      margin-top: 7px; }
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+        #sponsors .sponsors-list .sponsor .logo-twitter {
+          background-image: url("../images/logo-twitter@2x.png");
+          background-size: 210px 58px; } }
+    #sponsors .sponsors-list .sponsor .logo-twilio {
+      margin: 0 auto;
+      display: block;
+      overflow: hidden;
+      text-indent: 1000%;
+      white-space: nowrap;
+      width: 210px;
+      height: 58px;
+      background: url("../images/logo-twilio.png") no-repeat;
+      margin-top: 7px; }
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+        #sponsors .sponsors-list .sponsor .logo-twilio {
+          background-image: url("../images/logo-twilio@2x.png");
+          background-size: 210px 58px; } }
+    #sponsors .sponsors-list .sponsor .logo-mozilla {
+      margin: 0 auto;
+      display: block;
+      overflow: hidden;
+      text-indent: 1000%;
+      white-space: nowrap;
+      width: 210px;
+      height: 58px;
+      background: url("../images/logo-mozilla.png") no-repeat;
+      margin-top: 4px; }
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+        #sponsors .sponsors-list .sponsor .logo-mozilla {
+          background-image: url("../images/logo-mozilla@2x.png");
+          background-size: 210px 58px; } }
+    #sponsors .sponsors-list .sponsor .logo-bocoup {
+      margin: 0 auto;
+      display: block;
+      overflow: hidden;
+      text-indent: 1000%;
+      white-space: nowrap;
+      width: 210px;
+      height: 58px;
+      background: url("../images/logo-bocoup.png") no-repeat; }
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+        #sponsors .sponsors-list .sponsor .logo-bocoup {
+          background-image: url("../images/logo-bocoup@2x.png");
           background-size: 210px 58px; } }
   #sponsors a {
     color: #aaaaaa;

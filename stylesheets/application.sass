@@ -438,25 +438,41 @@ header
     @extend .list-simple
     overflow: hidden
     margin: 30px 0 10px
+    font-weight: bold
+    margin-bottom: 1em
 
-    li
+    @media only screen and (min-width: $break-small)
+      .row
+        margin-bottom: 1em
+
+    .sponsor
       @media only screen and (max-width: $break-small)
         margin-bottom: 40px
 
       .logo-innotech
         @include text-replace("../images/logo-innotech.png", 152px, 90px)
       .logo-brightbit
-        @include text-replace("../images/logo-brightbit.png", 210px, 58px)
-        margin-top: 10px
-        @media all and (-webkit-min-device-pixel-ratio: 1.5)
-          background-image: url("../images/logo-brightbit@2x.png")
-          background-size: 210px 58px
+        +logo-sponsor("brightbit")
+        margin-top: 11px
       .logo-sst
-        @include text-replace("../images/logo-sst.png", 210px, 58px)
-        margin-top: 18px
-        @media all and (-webkit-min-device-pixel-ratio: 1.5)
-          background-image: url("../images/logo-sst@2x.png")
-          background-size: 210px 58px
+        +logo-sponsor("sst")
+        margin-top: 20px
+      .logo-robyn
+        +logo-sponsor("robyn")
+      .logo-github
+        +logo-sponsor("github")
+        margin-top: 6px
+      .logo-twitter
+        +logo-sponsor("twitter")
+        margin-top: 7px
+      .logo-twilio
+        +logo-sponsor("twilio")
+        margin-top: 7px
+      .logo-mozilla
+        +logo-sponsor("mozilla")
+        margin-top: 4px
+      .logo-bocoup
+        +logo-sponsor("bocoup")
 
   a
     color: #aaa
