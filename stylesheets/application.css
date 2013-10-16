@@ -4724,7 +4724,7 @@ header {
       width: 210px;
       height: 58px;
       background: url("../images/logo-brightbit.png") no-repeat;
-      margin-top: 11px; }
+      margin-top: 10px; }
       @media all and (-webkit-min-device-pixel-ratio: 1.5) {
         #sponsors .sponsors-list .sponsor .logo-brightbit {
           background-image: url("../images/logo-brightbit@2x.png");
@@ -4735,15 +4735,15 @@ header {
       overflow: hidden;
       text-indent: 1000%;
       white-space: nowrap;
-      width: 210px;
+      width: 230px;
       height: 58px;
       background: url("../images/logo-sst.png") no-repeat;
-      margin-top: 20px; }
+      margin-top: 18px; }
       @media all and (-webkit-min-device-pixel-ratio: 1.5) {
         #sponsors .sponsors-list .sponsor .logo-sst {
           background-image: url("../images/logo-sst@2x.png");
-          background-size: 210px 58px; } }
-    #sponsors .sponsors-list .sponsor .logo-robyn {
+          background-size: 230px 58px; } }
+    #sponsors .sponsors-list .sponsor .logo-swagexpert {
       margin: 0 auto;
       display: block;
       overflow: hidden;
@@ -4751,10 +4751,11 @@ header {
       white-space: nowrap;
       width: 210px;
       height: 58px;
-      background: url("../images/logo-robyn.png") no-repeat; }
+      background: url("../images/logo-swagexpert.png") no-repeat;
+      margin-top: 10px; }
       @media all and (-webkit-min-device-pixel-ratio: 1.5) {
-        #sponsors .sponsors-list .sponsor .logo-robyn {
-          background-image: url("../images/logo-robyn@2x.png");
+        #sponsors .sponsors-list .sponsor .logo-swagexpert {
+          background-image: url("../images/logo-swagexpert@2x.png");
           background-size: 210px 58px; } }
     #sponsors .sponsors-list .sponsor .logo-github {
       margin: 0 auto;
@@ -4820,7 +4821,8 @@ header {
       white-space: nowrap;
       width: 210px;
       height: 58px;
-      background: url("../images/logo-bocoup.png") no-repeat; }
+      background: url("../images/logo-bocoup.png") no-repeat;
+      margin-top: 0; }
       @media all and (-webkit-min-device-pixel-ratio: 1.5) {
         #sponsors .sponsors-list .sponsor .logo-bocoup {
           background-image: url("../images/logo-bocoup@2x.png");

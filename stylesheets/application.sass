@@ -451,28 +451,14 @@ header
 
       .logo-innotech
         @include text-replace("../images/logo-innotech.png", 152px, 90px)
-      .logo-brightbit
-        +logo-sponsor("brightbit")
-        margin-top: 11px
-      .logo-sst
-        +logo-sponsor("sst")
-        margin-top: 20px
-      .logo-robyn
-        +logo-sponsor("robyn")
-      .logo-github
-        +logo-sponsor("github")
-        margin-top: 6px
-      .logo-twitter
-        +logo-sponsor("twitter")
-        margin-top: 7px
-      .logo-twilio
-        +logo-sponsor("twilio")
-        margin-top: 7px
-      .logo-mozilla
-        +logo-sponsor("mozilla")
-        margin-top: 4px
-      .logo-bocoup
-        +logo-sponsor("bocoup")
+      +logo-sponsor(brightbit, 10px)
+      +logo-sponsor(sst, 18px, 230px, 58px)
+      +logo-sponsor(swagexpert, 10px)
+      +logo-sponsor(github, 6px)
+      +logo-sponsor(twitter, 7px)
+      +logo-sponsor(twilio, 7px)
+      +logo-sponsor(mozilla, 4px)
+      +logo-sponsor(bocoup)
 
   a
     color: #aaa
