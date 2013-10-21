@@ -4827,6 +4827,20 @@ header {
         #sponsors .sponsors-list .sponsor .logo-bocoup {
           background-image: url("../images/logo-bocoup@2x.png");
           background-size: 210px 58px; } }
+    #sponsors .sponsors-list .sponsor .logo-roberthalf {
+      margin: 0 auto;
+      display: block;
+      overflow: hidden;
+      text-indent: 1000%;
+      white-space: nowrap;
+      width: 210px;
+      height: 58px;
+      background: url("../images/logo-roberthalf.png") no-repeat;
+      margin-top: 12px; }
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+        #sponsors .sponsors-list .sponsor .logo-roberthalf {
+          background-image: url("../images/logo-roberthalf@2x.png");
+          background-size: 210px 58px; } }
   #sponsors a {
     color: #aaaaaa;
     font-size: 20px;
