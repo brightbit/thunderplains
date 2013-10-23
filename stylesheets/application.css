@@ -4705,7 +4705,7 @@ header {
         margin-bottom: 1em; } }
     @media only screen and (max-width: 768px) {
       #sponsors .sponsors-list .sponsor {
-        margin-bottom: 40px; } }
+        margin-bottom: 20px; } }
     #sponsors .sponsors-list .sponsor .logo-innotech {
       margin: 0 auto;
       display: block;
@@ -4729,6 +4729,9 @@ header {
         #sponsors .sponsors-list .sponsor .logo-brightbit {
           background-image: url("../images/logo-brightbit@2x.png");
           background-size: 210px 58px; } }
+      @media only screen and (max-width: 768px) {
+        #sponsors .sponsors-list .sponsor .logo-brightbit {
+          margin-top: 0; } }
     #sponsors .sponsors-list .sponsor .logo-sst {
       margin: 0 auto;
       display: block;
@@ -4743,6 +4746,9 @@ header {
         #sponsors .sponsors-list .sponsor .logo-sst {
           background-image: url("../images/logo-sst@2x.png");
           background-size: 230px 58px; } }
+      @media only screen and (max-width: 768px) {
+        #sponsors .sponsors-list .sponsor .logo-sst {
+          margin-top: 0; } }
     #sponsors .sponsors-list .sponsor .logo-swagexpert {
       margin: 0 auto;
       display: block;
@@ -4757,6 +4763,9 @@ header {
         #sponsors .sponsors-list .sponsor .logo-swagexpert {
           background-image: url("../images/logo-swagexpert@2x.png");
           background-size: 210px 58px; } }
+      @media only screen and (max-width: 768px) {
+        #sponsors .sponsors-list .sponsor .logo-swagexpert {
+          margin-top: 0; } }
     #sponsors .sponsors-list .sponsor .logo-github {
       margin: 0 auto;
       display: block;
@@ -4771,6 +4780,9 @@ header {
         #sponsors .sponsors-list .sponsor .logo-github {
           background-image: url("../images/logo-github@2x.png");
           background-size: 210px 58px; } }
+      @media only screen and (max-width: 768px) {
+        #sponsors .sponsors-list .sponsor .logo-github {
+          margin-top: 0; } }
     #sponsors .sponsors-list .sponsor .logo-twitter {
       margin: 0 auto;
       display: block;
@@ -4785,6 +4797,9 @@ header {
         #sponsors .sponsors-list .sponsor .logo-twitter {
           background-image: url("../images/logo-twitter@2x.png");
           background-size: 210px 58px; } }
+      @media only screen and (max-width: 768px) {
+        #sponsors .sponsors-list .sponsor .logo-twitter {
+          margin-top: 0; } }
     #sponsors .sponsors-list .sponsor .logo-twilio {
       margin: 0 auto;
       display: block;
@@ -4799,6 +4814,9 @@ header {
         #sponsors .sponsors-list .sponsor .logo-twilio {
           background-image: url("../images/logo-twilio@2x.png");
           background-size: 210px 58px; } }
+      @media only screen and (max-width: 768px) {
+        #sponsors .sponsors-list .sponsor .logo-twilio {
+          margin-top: 0; } }
     #sponsors .sponsors-list .sponsor .logo-mozilla {
       margin: 0 auto;
       display: block;
@@ -4813,6 +4831,9 @@ header {
         #sponsors .sponsors-list .sponsor .logo-mozilla {
           background-image: url("../images/logo-mozilla@2x.png");
           background-size: 210px 58px; } }
+      @media only screen and (max-width: 768px) {
+        #sponsors .sponsors-list .sponsor .logo-mozilla {
+          margin-top: 0; } }
     #sponsors .sponsors-list .sponsor .logo-bocoup {
       margin: 0 auto;
       display: block;
@@ -4827,6 +4848,9 @@ header {
         #sponsors .sponsors-list .sponsor .logo-bocoup {
           background-image: url("../images/logo-bocoup@2x.png");
           background-size: 210px 58px; } }
+      @media only screen and (max-width: 768px) {
+        #sponsors .sponsors-list .sponsor .logo-bocoup {
+          margin-top: 0; } }
     #sponsors .sponsors-list .sponsor .logo-roberthalf {
       margin: 0 auto;
       display: block;
@@ -4836,11 +4860,48 @@ header {
       width: 210px;
       height: 58px;
       background: url("../images/logo-roberthalf.png") no-repeat;
-      margin-top: 12px; }
+      margin-top: 28px; }
       @media all and (-webkit-min-device-pixel-ratio: 1.5) {
         #sponsors .sponsors-list .sponsor .logo-roberthalf {
           background-image: url("../images/logo-roberthalf@2x.png");
           background-size: 210px 58px; } }
+      @media only screen and (max-width: 768px) {
+        #sponsors .sponsors-list .sponsor .logo-roberthalf {
+          margin-top: 0; } }
+    #sponsors .sponsors-list .sponsor .logo-telogicalsystems {
+      margin: 0 auto;
+      display: block;
+      overflow: hidden;
+      text-indent: 1000%;
+      white-space: nowrap;
+      width: 155px;
+      height: 84px;
+      background: url("../images/logo-telogicalsystems.png") no-repeat;
+      margin-top: 0; }
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+        #sponsors .sponsors-list .sponsor .logo-telogicalsystems {
+          background-image: url("../images/logo-telogicalsystems@2x.png");
+          background-size: 155px 84px; } }
+      @media only screen and (max-width: 768px) {
+        #sponsors .sponsors-list .sponsor .logo-telogicalsystems {
+          margin-top: 0; } }
+    #sponsors .sponsors-list .sponsor .logo-projekt202 {
+      margin: 0 auto;
+      display: block;
+      overflow: hidden;
+      text-indent: 1000%;
+      white-space: nowrap;
+      width: 210px;
+      height: 58px;
+      background: url("../images/logo-projekt202.png") no-repeat;
+      margin-top: 24px; }
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+        #sponsors .sponsors-list .sponsor .logo-projekt202 {
+          background-image: url("../images/logo-projekt202@2x.png");
+          background-size: 210px 58px; } }
+      @media only screen and (max-width: 768px) {
+        #sponsors .sponsors-list .sponsor .logo-projekt202 {
+          margin-top: 0; } }
   #sponsors a {
     color: #aaaaaa;
     font-size: 20px;
