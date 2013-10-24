@@ -4902,6 +4902,23 @@ header {
       @media only screen and (max-width: 768px) {
         #sponsors .sponsors-list .sponsor .logo-projekt202 {
           margin-top: 0; } }
+    #sponsors .sponsors-list .sponsor .logo-huboard {
+      margin: 0 auto;
+      display: block;
+      overflow: hidden;
+      text-indent: 1000%;
+      white-space: nowrap;
+      width: 210px;
+      height: 58px;
+      background: url("../images/logo-huboard.png") no-repeat;
+      margin-top: 16px; }
+      @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+        #sponsors .sponsors-list .sponsor .logo-huboard {
+          background-image: url("../images/logo-huboard@2x.png");
+          background-size: 210px 58px; } }
+      @media only screen and (max-width: 768px) {
+        #sponsors .sponsors-list .sponsor .logo-huboard {
+          margin-top: 0; } }
   #sponsors a {
     color: #aaaaaa;
     font-size: 20px;
@@ -4916,6 +4933,9 @@ header {
   background: #f2ece4;
   border-top: 2px solid #4c5a53;
   border-bottom: 2px solid #4c5a53; }
+#location .hotel-note {
+  font-size: 0.75em;
+  margin-top: 20px; }
 
 footer {
   overflow: auto; }
