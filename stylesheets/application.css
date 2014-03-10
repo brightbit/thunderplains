@@ -187,7 +187,6 @@ table {
 
   @page {
     margin: 2cm 0.5cm; }
-
   p, h2, h3 {
     orphans: 3;
     widows: 3; }
@@ -223,7 +222,7 @@ table {
 
 html {
   font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -3654,28 +3653,24 @@ a.list-group-item.active > .badge {
 
   to {
     background-position: 0 0; } }
-
 @-moz-keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
 
   to {
     background-position: 0 0; } }
-
 @-o-keyframes progress-bar-stripes {
   from {
     background-position: 0 0; }
 
   to {
     background-position: 40px 0; } }
-
 @keyframes progress-bar-stripes {
   from {
     background-position: 40px 0; }
 
   to {
     background-position: 0 0; } }
-
 .progress {
   height: 20px;
   margin-bottom: 20px;
@@ -3942,7 +3937,6 @@ a.list-group-item.active > .badge {
 
 @-ms-viewport {
   width: device-width; }
-
 @media screen and (max-width: 400px) {
   @-ms-viewport {
     width: 320px; } }
@@ -4154,42 +4148,36 @@ th.hidden-lg, td.hidden-lg {
 
   to {
     opacity: 1; } }
-
 @-moz-keyframes fadeIn {
   from {
     opacity: 0; }
 
   to {
     opacity: 1; } }
-
 @keyframes fadeIn {
   from {
     opacity: 0; }
 
   to {
     opacity: 1; } }
-
 @-webkit-keyframes fadeBackdrop {
   from {
     opacity: 0; }
 
   to {
     opacity: 0.8; } }
-
 @-moz-keyframes fadeBackdrop {
   from {
     opacity: 0; }
 
   to {
     opacity: 0.8; } }
-
 @keyframes fadeBackdrop {
   from {
     opacity: 0; }
 
   to {
     opacity: 0.8; } }
-
 @-webkit-keyframes bloop {
   0% {
     -webkit-transform: scale(0.1); }
@@ -4202,7 +4190,6 @@ th.hidden-lg, td.hidden-lg {
 
   100% {
     -webkit-transform: scale(1); } }
-
 @-moz-keyframes bloop {
   0% {
     -webkit-transform: scale(0.1); }
@@ -4215,7 +4202,6 @@ th.hidden-lg, td.hidden-lg {
 
   100% {
     -webkit-transform: scale(1); } }
-
 @keyframes bloop {
   0% {
     -webkit-transform: scale(0.1); }
@@ -4228,7 +4214,6 @@ th.hidden-lg, td.hidden-lg {
 
   100% {
     -webkit-transform: scale(1); } }
-
 /* Colors */
 /* Fonts */
 @font-face {
@@ -4241,7 +4226,6 @@ th.hidden-lg, td.hidden-lg {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal; }
-
 @font-face {
   font-family: "Haymaker";
   src: url("/fonts/haymaker-webfont.eot");
@@ -4252,7 +4236,6 @@ th.hidden-lg, td.hidden-lg {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal; }
-
 @font-face {
   font-family: "Governor";
   src: url("/fonts/governor-webfont.eot");
@@ -4263,7 +4246,6 @@ th.hidden-lg, td.hidden-lg {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal; }
-
 /* Breakpoints */
 body {
   background: #fafafa;
@@ -4982,6 +4964,8 @@ footer {
       footer .logo-brightbit {
         background-image: url("../images/logo-brightbit-footer@2x.png");
         background-size: 146px 40px; } }
+  footer .past-years {
+    font-size: 12px; }
 
 .modal-open {
   overflow: auto; }
